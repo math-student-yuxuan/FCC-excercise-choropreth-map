@@ -1,0 +1,148 @@
+html,
+body {
+  min-height: 100%;
+  background-color: white;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#main {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+#des-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  min-height: 600px;
+  background-color: whitesmoke;
+  border-radius: 50px;
+}
+#des-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+#des {
+  border-radius: 30px;
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  transition: 0.5s;
+}
+
+#des-left {
+  margin-left: 7px;
+}
+#des-right {
+  width: 220px;
+  font-family: "Garamond", serif;
+  text-align: right;
+  margin-right: 20px;
+}
+#des-form {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+}
+#des-form-input {
+  height: 20px;
+  border: 2px solid lightgray;
+  border-radius: 3px;
+}
+#des-form-button {
+  height: auto;
+  border: none;
+  border-radius: 50%;
+  background-color: #6ca367;
+  padding: 5px;
+  color: white;
+}
+#des-form-button:hover {
+  cursor: pointer;
+  background-color: #a2cf9e;
+}
+#error-message {
+  margin-top: 0;
+  font-size: 10px;
+  height: 10px;
+}
+svg {
+  margin-top: 20px;
+  background-color: whitesmoke;
+  border-radius: 50px;
+}
+#canvas-des {
+  min-width: 300px;
+  min-height: 300px;
+}
+
+#canvas {
+  min-width: 1000px;
+  min-height: 600px;
+}
+#title {
+  font-size: 40px;
+}
+#description {
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  color: darkgreen;
+}
+#source {
+  width: 80%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-left: 50px;
+}
+.county:hover {
+  fill: yellow;
+  stroke: yellow;
+  stroke-width: 3px;
+}
+@media (max-width: 1400px) {
+  #main {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #des {
+    width: 100%;
+    margin-top: 20px;
+    height: 80%;
+  }
+  #source {
+    margin-top: 0;
+    padding-right: 10px;
+  }
+  #des-container {
+    width: 1000px;
+    min-height: 300px;
+    flex-direction: row;
+  }
+  #des-form {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 1000px) {
+  #des-container {
+    width: 90%;
+    min-width: 750px;
+  }
+}
